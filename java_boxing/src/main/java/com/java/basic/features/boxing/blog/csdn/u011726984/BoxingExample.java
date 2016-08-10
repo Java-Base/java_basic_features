@@ -73,6 +73,7 @@ public class BoxingExample {
 
 		// 包装器类型与包装器类型, 使用equals比较. 自动拆箱为基本数据类型. Integer.intValue()
 		System.out.println(i1.equals(i2));	// true
+
 		/**
 		 * 解释下这行输出true的原因:
 		 * 因为在Integer包装类实现的equals方法中, 只要比较的对象是Integer实例, 那么就会自动拆箱为基本数据类型
@@ -96,18 +97,24 @@ public class BoxingExample {
 
 		// 会自动拆箱(调用intValue方法)
 		System.out.println(c == d);
+
 		// 会自动拆箱后再自动装箱
 		System.out.println(e == f);
+
 		// 虽然“==”比较的是引用的是否是同一对象，但这里有算术运算，如果该引用为包装器类型则会导致自动拆箱
 		System.out.println(c == (a + b));
+
 		// equals 比较的是引用的对象的内容（值）是否相等，但这里有算术运算，如果该引用为包装器类型则会导
 		// 致自动拆箱，再自动装箱
 		// a+b触发自动拆箱得到值后，再自动装箱与c比较
 		System.out.println(c.equals(a + b));
+
 		// 首先a+b触发自动拆箱后值为int型，所以比较的是值是否相等
 		System.out.println(g == (a + b));
+
 		// 首先a+b触发自动拆箱后值为int型，自动装箱后为Integer型，然后g为Long型
 		System.out.println(g.equals(a + b));
+
 		// 首先a+h触发自动拆箱后值为long型，因为int型的a会自动转型为long型的g然后自动装箱后为Long型，
 		// 而g也为Long型
 		System.out.println(g.equals(a + h));

@@ -18,11 +18,12 @@ public class BoxingExampleTest {
 	@Before
 	public void setUp() {
 		boxingExample = new BoxingExample();
+		System.out.println("\n*************set up");
 	}
 
 	@After
 	public void tearDown() {
-		System.out.println("*************tear down");
+		System.out.println("*************tear down\n");
 	}
 
 	/**
