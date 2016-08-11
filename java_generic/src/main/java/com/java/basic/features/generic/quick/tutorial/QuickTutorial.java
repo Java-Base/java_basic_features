@@ -11,6 +11,7 @@ import java.util.List;
  * @author 	Lian
  * @time	2016年8月10日
  */
+@SuppressWarnings("unused")
 public class QuickTutorial {
 
 	/**
