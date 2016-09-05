@@ -46,5 +46,6 @@
 		<module>java_generic</module>
 		<module>java_properties</module>
     <module>java_final</module>
+    <module>java_enum</module>
   </modules>
 </project>

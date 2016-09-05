@@ -6,5 +6,6 @@
 # file #
 *.classpath
 *.project
+*.iml
 
 */target/
