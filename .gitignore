@@ -1,11 +1,12 @@
 # directory #
 *bin/
 *.settings/
-
+*/target/
+*.idea/
 
 # file #
 *.classpath
 *.project
 *.iml
 
-*/target/
+

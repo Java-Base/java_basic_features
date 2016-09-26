@@ -29,14 +29,23 @@ public class BoxingExample {
 		Integer i1 = 17;
 		Integer i2 = 17;
 
-		Integer i3 = 137;
+		Integer i3= 137;
 		Integer i4 = 137;
 
-		System.out.println(i1 == i2);	// true
+
 		/**
-		 * 解释下i3==i4输出true的原因:
-		 * 当包装器类型调用'=='进行比较时, i3会调用Integer.valueOf()自动装箱基本数据类型为包装器类型
-		 * Integer对象自动缓存int值范围在low~high(-128-127), 如果超出这个范围则会自动装箱为包装类
+		 * true
+		 *
+		 * 两边均为包装器类型，'==' 运算符比较对象的实际引用地址。
+		 * i1与i2指向的是同一对象
+		 */
+		System.out.println(i1 == i2);	// true
+
+		/**
+		 * false
+		 *
+		 * 两边均为包装器类型，'==' 运算符比较对象的实际引用地址。
+		 * i3与i4指向的是不同对象
 		 */
 		System.out.println(i3 == i4);	// false
 	}
@@ -51,7 +60,11 @@ public class BoxingExample {
 		int i3 = 137;
 		Integer i4 = 137;
 
+		/**
+		 * i1 == i2 的实际执行代码为：i1.intValue() == i2
+		 */
 		System.out.println(i1 == i2);	// true
+
 		/**
 		 * 解释下i3==i4输出true的原因:
 		 * 当执行到这一行时, i4会调用Integer.intValue方法自动拆箱包装器类型为基本数据类型
@@ -67,16 +80,28 @@ public class BoxingExample {
 		Integer i3 = 137;
 		Integer i4 = 137;
 
-		// 包装器类型与基本数据类型, 使用==相比较. Integer.valueOf()
+		/**
+		 * true
+		 */
 		System.out.println(i1==i2);		// true
+
+		/**
+		 * false
+		 */
 		System.out.println(i3==i4);		// false
 
-		// 包装器类型与包装器类型, 使用equals比较. 自动拆箱为基本数据类型. Integer.intValue()
+		/**
+		 *
+		 * true
+		 *
+		 * 查看Integer.equals()源码得知，两个Integer对象最终比较的是值
+		 */
 		System.out.println(i1.equals(i2));	// true
 
 		/**
-		 * 解释下这行输出true的原因:
-		 * 因为在Integer包装类实现的equals方法中, 只要比较的对象是Integer实例, 那么就会自动拆箱为基本数据类型
+		 * true
+		 *
+		 * 查看Integer.equals()源码得知，两个Integer对象最终比较的是值
 		 */
 		System.out.println(i3.equals(i4));	// true
 	}
@@ -88,24 +113,15 @@ public class BoxingExample {
 		Integer a = 1;
 		Integer b = 2;
 		Integer c = 3;
-		Integer d = 3;
-		Integer e = 321;
-		Integer f = 321;
 
 		Long g = 3L;
 		Long h = 2L;
 
-		// 会自动拆箱(调用intValue方法)
-		System.out.println(c == d);
-
-		// 会自动拆箱后再自动装箱
-		System.out.println(e == f);
 
 		// 虽然“==”比较的是引用的是否是同一对象，但这里有算术运算，如果该引用为包装器类型则会导致自动拆箱
 		System.out.println(c == (a + b));
 
-		// equals 比较的是引用的对象的内容（值）是否相等，但这里有算术运算，如果该引用为包装器类型则会导
-		// 致自动拆箱，再自动装箱
+		// equals 比较的是引用的对象的内容（值）是否相等，但这里有算术运算，如果该引用为包装器类型则会导致自动拆箱，再自动装箱
 		// a+b触发自动拆箱得到值后，再自动装箱与c比较
 		System.out.println(c.equals(a + b));
 
