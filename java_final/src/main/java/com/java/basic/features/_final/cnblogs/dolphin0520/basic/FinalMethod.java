@@ -20,6 +20,7 @@ public class FinalMethod extends Person {
 }
 
 class Person {
+	
 	final void say() {
 		System.out.println("Person say...");
 	}
