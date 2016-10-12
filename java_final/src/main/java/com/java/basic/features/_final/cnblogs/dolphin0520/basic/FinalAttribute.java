@@ -6,7 +6,8 @@ package com.java.basic.features._final.cnblogs.dolphin0520.basic;
  *   如果是引用类型的变量，则在对其初始化之后便不能再让其指向另一个对象。
  *
  * @author 	Lian
- * @time	2016年8月11日
+ * @date	2016年8月11日
+ * @since 	1.0
  */
 @SuppressWarnings("unused")
 public class FinalAttribute {

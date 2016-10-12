@@ -7,7 +7,8 @@ import java.util.EnumSet;
  * http://www.cnblogs.com/happyPawpaw/archive/2013/04/09/3009553.html
  *
  * @author 	Lian
- * @time	2016年9月5日
+ * @date	2016年9月5日
+ * @since 	1.0
  */
 public class LightTest {
 

@@ -5,7 +5,8 @@ package com.java.basic.features._final.cnblogs.dolphin0520.deep;
  * 而final变量一旦被初始化赋值之后，就不能再被赋值了。
  *
  * @author 	Lian
- * @time	2016年8月11日
+ * @date	2016年8月11日
+ * @since 	1.0
  */
 public class FinalVariable {
 

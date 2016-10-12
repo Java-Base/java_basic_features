@@ -5,8 +5,8 @@ package com.java.basic.features._final.cnblogs.dolphin0520.deep;
  *     static作用于成员变量用来表示只保存一份副本
  *     而final的作用是用来保证变量不可变
  *
- * @auth 	Lian
- * @time	2016年8月11日
+ * @author 	Lian
+ * @date	2016年8月11日
  * @since 	1.0
  */
 public class FinalStatic {
