@@ -20,21 +20,37 @@ public class FinalVariable {
 		final String b = "hello";
 		String c = "hello";
 
+		/**
+		 * 等价于下面的代码：
+		 * String d = "hello2";
+		 */
 		String d = b + 2;
 		System.out.println((a == d));
 
 		System.out.println("******************");
 
+		/**
+		 * 等价于下面的代码：
+		 * String e = (new StringBuilder()).append(c).append(2).toString();
+		 */
 		String e = c + 2;
 		System.out.println((a == e));
 
 		System.out.println("******************");
 
+		/**
+		 * 等价于下面的代码：
+		 * String f = "hello2";
+		 */
 		String f = "hello" + 2;
 		System.out.println((a == f));
 
 		System.out.println("******************");
 
+		/**
+		 * 等价于下面的代码：
+		 * String g = (new StringBuilder()).append(getHello()).append(2).toString();
+		 */
 		String g = getHello() + 2;
 		System.out.println((a == g));
 	}
