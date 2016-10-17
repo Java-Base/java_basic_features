@@ -7,8 +7,8 @@ import java.util.List;
  * 找出两个数组中不同的元素, 并存放的新的数组中打印出来
  *
  * @author 	Lian
- * @time	2016年7月20日
- *
+ * @date	2016年7月20日
+ * @since 	1.0
  */
 public class ArrayUtil {
 

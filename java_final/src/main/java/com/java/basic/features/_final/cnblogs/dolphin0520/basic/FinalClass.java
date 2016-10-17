@@ -6,7 +6,8 @@ package com.java.basic.features._final.cnblogs.dolphin0520.basic;
  * 在使用final修饰类的时候，要注意谨慎选择，除非这个类真的在以后不会用来继承或者出于安全的考虑，尽量不要将类设计为final类。
  *
  * @author 	Lian
- * @time	2016年8月11日
+ * @date	2016年8月11日
+ * @since 	1.0
  */
 //public class FinalClass extends People {
 public final class FinalClass {

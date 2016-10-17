@@ -4,7 +4,11 @@ package com.java.basic.features._final.cnblogs.dolphin0520.deep;
  * 当用final作用于类的成员变量时，成员变量（注意是类的成员变量，局部变量只需要保证在使用之前被初始化赋值即可）必须在定义时或者构造器中进行初始化赋值，
  * 而final变量一旦被初始化赋值之后，就不能再被赋值了。
  *
+<<<<<<< HEAD
  * @auth 	Lian
+=======
+ * @author 	Lian
+>>>>>>> 685df5ec8a47c83b8c8e005744365ae4f4582248
  * @date	2016年8月11日
  * @since 	1.0
  */
@@ -21,21 +25,37 @@ public class FinalVariable {
 		final String b = "hello";
 		String c = "hello";
 
+		/**
+		 * 等价于下面的代码：
+		 * String d = "hello2";
+		 */
 		String d = b + 2;
 		System.out.println((a == d));
 
 		System.out.println("******************");
 
+		/**
+		 * 等价于下面的代码：
+		 * String e = (new StringBuilder()).append(c).append(2).toString();
+		 */
 		String e = c + 2;
 		System.out.println((a == e));
 
 		System.out.println("******************");
 
+		/**
+		 * 等价于下面的代码：
+		 * String f = "hello2";
+		 */
 		String f = "hello" + 2;
 		System.out.println((a == f));
 
 		System.out.println("******************");
 
+		/**
+		 * 等价于下面的代码：
+		 * String g = (new StringBuilder()).append(getHello()).append(2).toString();
+		 */
 		String g = getHello() + 2;
 		System.out.println((a == g));
 	}

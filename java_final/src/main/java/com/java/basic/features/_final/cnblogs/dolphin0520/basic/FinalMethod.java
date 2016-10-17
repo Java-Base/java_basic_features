@@ -5,7 +5,8 @@ package com.java.basic.features._final.cnblogs.dolphin0520.basic;
  * 类的private方法会隐式地被指定为final方法
  *
  * @author 	Lian
- * @time	2016年8月11日
+ * @date	2016年8月11日
+ * @since 	1.0
  */
 public class FinalMethod extends Person {
 

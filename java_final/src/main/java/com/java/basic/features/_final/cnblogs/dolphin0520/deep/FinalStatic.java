@@ -6,7 +6,8 @@ package com.java.basic.features._final.cnblogs.dolphin0520.deep;
  *     而final的作用是用来保证变量不可变
  *
  * @author 	Lian
- * @time	2016年8月11日
+ * @date	2016年8月11日
+ * @since 	1.0
  */
 public class FinalStatic {
 

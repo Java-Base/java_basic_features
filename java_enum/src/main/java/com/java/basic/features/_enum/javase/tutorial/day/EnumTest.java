@@ -5,7 +5,8 @@ package com.java.basic.features._enum.javase.tutorial.day;
  * @url		http://docs.oracle.com/javase/tutorial/java/javaOO/enum.html
  *
  * @author 	Lian
- * @time	2016年9月5日
+ * @date	2016年9月5日
+ * @since 	1.0
  */
 public class EnumTest {
 

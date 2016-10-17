@@ -5,7 +5,8 @@ package com.java.basic.features._final.cnblogs.dolphin0520.deep;
  * 引用变量被final修饰之后，虽然不能再指向其他对象，但是它指向的对象的内容是可变的。
  *
  * @author 	Lian
- * @time	2016年8月11日
+ * @date	2016年8月11日
+ * @since 	1.0
  */
 public class FinalReference {
 
@@ -16,5 +17,6 @@ public class FinalReference {
 }
 
 class MyClass {
+
 	public int i = 0;
 }

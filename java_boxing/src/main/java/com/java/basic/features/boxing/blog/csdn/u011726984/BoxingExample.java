@@ -3,9 +3,10 @@ package com.java.basic.features.boxing.blog.csdn.u011726984;
 /**
  * Java学习之自动装箱和自动拆箱源码分析
  *
- * @author 	Lian
- * @time	2016年7月20日
  * @url		http://blog.csdn.net/u011726984/article/details/48031991
+ * @author 	Lian
+ * @date	2016年7月20日
+ * @since 	1.0
  */
 public class BoxingExample {
 
