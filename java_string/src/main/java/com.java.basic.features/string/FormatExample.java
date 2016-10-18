@@ -1,10 +1,12 @@
 package com.java.basic.features.string;
 
 /**
- * @auth Lian
- * @date 2016/10/8
- * @desc JAVA字符串格式化-String.format()的使用
- * 			String类的format()方法用于创建格式化的字符串以及连接多个字符串对象。
+ * JAVA字符串格式化-String.format()的使用
+ *
+ * @author 	Lian
+ * @date 	2016/10/8
+ * @since 	1.0
+ * @desc	String类的format()方法用于创建格式化的字符串以及连接多个字符串对象。
  * 			format(String format, Object... args) 新字符串使用本地语言环境，制定字符串格式和参数生成格式化的新字符串。
  * 			format(Locale locale, String format, Object... args) 使用指定的语言环境，制定字符串格式和参数生成格式化的字符串。
  */
@@ -28,7 +30,7 @@ public class FormatExample {
 	 * %tx	日期与时间类型(x代表不同的日期与时间转换符
 	 */
 	private static void conversionSpecifierTest() {
-		String str = null;
+		String str;
 		str = String.format("Hi, %s", "廉");
 		System.out.println(str);
 		str = String.format("Hi, %s %s %s", "廉", "新", "忠");

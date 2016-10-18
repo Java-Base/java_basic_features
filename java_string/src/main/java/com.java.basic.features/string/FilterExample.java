@@ -4,8 +4,11 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- * @auth Lian
- * @date 2016/10/8
+ * 字符串顾虑
+ *
+ * @author 	Lian
+ * @date 	2016/10/8
+ * @since 	1.0
  */
 public class FilterExample {
 
