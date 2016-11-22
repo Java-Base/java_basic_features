@@ -4,7 +4,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 /**
- * 
+ * 数组工具测试类
  *
  * @author 	Lian
  * @time	2016年7月20日

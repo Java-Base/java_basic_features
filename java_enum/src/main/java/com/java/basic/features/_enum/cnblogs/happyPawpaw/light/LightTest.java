@@ -1,4 +1,4 @@
-package com.java.basic.features._enum.javase.tutorial.light;
+package com.java.basic.features._enum.cnblogs.happyPawpaw.light;
 
 import java.util.EnumMap;
 import java.util.EnumSet;

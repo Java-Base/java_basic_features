@@ -9,8 +9,9 @@ import static org.junit.Assert.*;
 /**
  * QuickTutorials Test
  *
- * @auth Lian
- * @date 2016/9/28
+ * @auth 	Lian
+ * @date 	2016/9/28
+ * @since 	1.0
  */
 public class QuickTutorialTest {
 

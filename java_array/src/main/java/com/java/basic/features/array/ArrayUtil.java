@@ -16,6 +16,32 @@ public class ArrayUtil {
 		List<Integer> list = new ArrayList<Integer>();
 
 		// 查找在数组B，而不在数组A中的元素
+		findDiffInArrays(arrayA, arrayB, list);
+
+
+		// 查找在数组A，而不在数组B中的元素
+		findDiffInArrays(arrayB, arrayA, list);
+
+		// 存放不同元素的数组c
+		int[] arrayC = new int[list.size()];
+		for(int i = 0; i < list.size(); i++) {
+			arrayC[i] = list.get(i).intValue();
+		}
+
+		System.out.println("Different element in array A and B are: ");
+		for (int value : arrayC) {
+			System.out.print(value + " ");
+		}
+	}
+
+	/**
+	 * 找出两个数组中不同的元素，并存放入list中
+	 *
+	 * @param arrayA
+	 * @param arrayB
+	 * @param list
+	 */
+	private void findDiffInArrays(int[] arrayA, int[] arrayB, List list) {
 		for (int i = 0; i < arrayA.length; i++) {
 			boolean isExistInArrayB = false;
 
@@ -29,33 +55,6 @@ public class ArrayUtil {
 			if (!isExistInArrayB) {
 				list.add(arrayA[i]);
 			}
-		}
-
-		// 查找在数组A，而不在数组B中的元素
-		for (int i = 0; i < arrayB.length; i++) {
-			boolean isExistInArrayA = false;
-
-			for(int j = 0; j < arrayA.length; j++) {
-				if (arrayA[j] == arrayB[i]) {
-					isExistInArrayA = true;
-					break;
-				}
-			}
-
-			if (!isExistInArrayA) {
-				list.add(arrayB[i]);
-			}
-		}
-
-		// 存放不同元素的数组c
-		int[] arrayC = new int[list.size()];
-		for(int i = 0; i < list.size(); i++) {
-			arrayC[i] = list.get(i).intValue();
-		}
-
-		System.out.println("Different element in array A and B are: ");
-		for (int value : arrayC) {
-			System.out.print(value + " ");
 		}
 	}
 }

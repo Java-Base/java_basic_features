@@ -1,15 +1,15 @@
-package com.java.basic.features.boxing.blog.csdn.u011726984;
+package com.java.basic.features.boxing.cnblogs.dolphin0520;
 
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
 /**
- * 
+ * BoxingExample测试类
  *
  * @author 	Lian
  * @time	2016年7月20日
- *
+ * @since 	1.0
  */
 public class BoxingExampleTest {
 
@@ -27,7 +27,7 @@ public class BoxingExampleTest {
 	}
 
 	/**
-	 * Test method for {@link com.java.basic.features.boxing.blog.csdn.u011726984.BoxingExample#boxingTest()}.
+	 * Test method for {@link BoxingExample#boxingTest()}.
 	 */
 	@Test
 	public void testBoxingTest() {
@@ -35,7 +35,7 @@ public class BoxingExampleTest {
 	}
 
 	/**
-	 * Test method for {@link com.java.basic.features.boxing.blog.csdn.u011726984.BoxingExample#unboxingTest()}.
+	 * Test method for {@link BoxingExample#unboxingTest()}.
 	 */
 	@Test
 	public void testUnboxingTest() {
@@ -43,15 +43,7 @@ public class BoxingExampleTest {
 	}
 
 	/**
-	 * Test method for {@link com.java.basic.features.boxing.blog.csdn.u011726984.BoxingExample#unboxingTest2()}.
-	 */
-	@Test
-	public void testUnboxingTest2() {
-		boxingExample.unboxingTest2();
-	}
-
-	/**
-	 * Test method for {@link com.java.basic.features.boxing.blog.csdn.u011726984.BoxingExample#comprehensiveTest()}.
+	 * Test method for {@link BoxingExample#comprehensiveTest()}.
 	 */
 	@Test
 	public void testComprehensiveTest() {
