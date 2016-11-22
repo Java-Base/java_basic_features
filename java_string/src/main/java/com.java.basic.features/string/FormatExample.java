@@ -3,6 +3,7 @@ package com.java.basic.features.string;
 /**
  * JAVA字符串格式化-String.format()的使用
  *
+ * @url
  * @author 	Lian
  * @date 	2016/10/8
  * @since 	1.0

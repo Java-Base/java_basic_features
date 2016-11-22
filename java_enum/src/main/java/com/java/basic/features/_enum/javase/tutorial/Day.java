@@ -1,4 +1,4 @@
-package com.java.basic.features._enum.javase.tutorial.day;
+package com.java.basic.features._enum.javase.tutorial;
 
 /**
  * Enum Day.

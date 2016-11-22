@@ -18,7 +18,7 @@ public final class ResourceUtil {
 	}
 
 	public static Properties getProperties(String path) {
-		InputStream inputStream = null;
+		InputStream inputStream;
 		Properties properties = new Properties();
 		try {
 			/**

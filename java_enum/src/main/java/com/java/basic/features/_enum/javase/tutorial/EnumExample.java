@@ -1,4 +1,4 @@
-package com.java.basic.features._enum.javase.tutorial.day;
+package com.java.basic.features._enum.javase.tutorial;
 
 /**
  * Enum Test
@@ -8,11 +8,11 @@ package com.java.basic.features._enum.javase.tutorial.day;
  * @date	2016年9月5日
  * @since 	1.0
  */
-public class EnumTest {
+public class EnumExample {
 
 	Day day;
 
-	public EnumTest(Day day) {
+	public EnumExample(Day day) {
 		this.day = day;
 	}
 
@@ -38,15 +38,15 @@ public class EnumTest {
 	}
 
 	public static void main(String[] args) {
-		EnumTest firstDay = new EnumTest(Day.MONDAY);
+		EnumExample firstDay = new EnumExample(Day.MONDAY);
 		firstDay.tellItLikeItIs();
-		EnumTest thirdDay = new EnumTest(Day.WEDNESDAY);
+		EnumExample thirdDay = new EnumExample(Day.WEDNESDAY);
 		thirdDay.tellItLikeItIs();
-		EnumTest fifthDay = new EnumTest(Day.FRIDAY);
+		EnumExample fifthDay = new EnumExample(Day.FRIDAY);
 		fifthDay.tellItLikeItIs();
-		EnumTest sixthDay = new EnumTest(Day.SATURDAY);
+		EnumExample sixthDay = new EnumExample(Day.SATURDAY);
 		sixthDay.tellItLikeItIs();
-		EnumTest seventhDay = new EnumTest(Day.SUNDAY);
+		EnumExample seventhDay = new EnumExample(Day.SUNDAY);
 		seventhDay.tellItLikeItIs();
 	}
 }

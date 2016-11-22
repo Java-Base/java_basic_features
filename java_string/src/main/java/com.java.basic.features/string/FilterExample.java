@@ -4,7 +4,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- * 字符串顾虑
+ * 字符串过滤
  *
  * @author 	Lian
  * @date 	2016/10/8

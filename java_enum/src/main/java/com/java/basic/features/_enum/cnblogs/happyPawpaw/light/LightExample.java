@@ -10,7 +10,7 @@ import java.util.EnumSet;
  * @date	2016年9月5日
  * @since 	1.0
  */
-public class LightTest {
+public class LightExample {
 
 	// 1.定义枚举类型
 
