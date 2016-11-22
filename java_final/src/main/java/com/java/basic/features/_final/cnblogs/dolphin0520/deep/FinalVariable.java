@@ -4,7 +4,11 @@ package com.java.basic.features._final.cnblogs.dolphin0520.deep;
  * 当用final作用于类的成员变量时，成员变量（注意是类的成员变量，局部变量只需要保证在使用之前被初始化赋值即可）必须在定义时或者构造器中进行初始化赋值，
  * 而final变量一旦被初始化赋值之后，就不能再被赋值了。
  *
+<<<<<<< HEAD
+ * @auth 	Lian
+=======
  * @author 	Lian
+>>>>>>> 685df5ec8a47c83b8c8e005744365ae4f4582248
  * @date	2016年8月11日
  * @since 	1.0
  */
