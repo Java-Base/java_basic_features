@@ -22,6 +22,7 @@ public class EqualExample {
 		int n = 3;
 		System.out.println("m==n: " + (m == n));
 
+
 		String str = new String("Hello");
 		String str1 = new String("Hello");
 		String str2 = new String("Hello");

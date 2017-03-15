@@ -49,6 +49,13 @@ public class FormatExample {
 	}
 
 	public static void main(String[] args) {
-		conversionSpecifierTest();
+//		conversionSpecifierTest();
+		long entry = 1000;
+		long send = 100;
+
+		String result = String.format("%.2f%%", (double)(send * 100)/entry);
+		String result1 = String.format("%.2f%%", (double)(send)/entry);
+		System.out.println("result: " + result);
+		System.out.println("lll: " + result1);
 	}
 }
