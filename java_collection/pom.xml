@@ -9,8 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.java</groupId>
-    <artifactId>java_string</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <artifactId>java_collection</artifactId>
+    <version>0.0.1</version>
 
 </project>

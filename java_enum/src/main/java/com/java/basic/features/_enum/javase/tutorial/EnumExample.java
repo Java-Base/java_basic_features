@@ -38,6 +38,10 @@ public class EnumExample {
 	}
 
 	public static void main(String[] args) {
+
+		System.out.println(Day.MONDAY);
+		System.out.println(Day.MONDAY.equals("MONDAY"));
+
 		EnumExample firstDay = new EnumExample(Day.MONDAY);
 		firstDay.tellItLikeItIs();
 		EnumExample thirdDay = new EnumExample(Day.WEDNESDAY);
